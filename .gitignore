@@ -1,6 +1,23 @@
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
+*.sw?
+.#*
+*#
+*~
+.classpath
+.project
+.settings
+bin
+build
+target
+dependency-reduced-pom.xml
+*.sublime-*
+/scratch
+.gradle
+README.html
+.idea
+*.iml
 
 ### STS ###
 .apt_generated
