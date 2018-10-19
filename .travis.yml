@@ -1,0 +1,19 @@
+sudo: false
+language: java
+jdk:
+- oraclejdk8
+branches:
+  only:
+  - master
+script:
+- echo "start build! "
+- "./run.sh"
+addons:
+  ssh_known_hosts: 45.78.47.150:28548
+before_install:
+- openssl aes-256-cbc -K $encrypted_8896f85ae3e0_key -iv $encrypted_8896f85ae3e0_iv
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- cat ~/.ssh/id_rsa
+#after_success:
+#- "./deploy/deploy_to_remote.sh"
