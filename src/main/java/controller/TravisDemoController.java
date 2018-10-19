@@ -8,7 +8,7 @@ public class TravisDemoController {
 	
     @RequestMapping("/")
     public String index() {
-        return "It is the Demo project for Travis auto deployment.";
+        return "It is the Demo project for Travis auto deployment,check it out.";
     }
 
 }
