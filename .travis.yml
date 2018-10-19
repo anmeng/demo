@@ -15,5 +15,5 @@ before_install:
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 - cat ~/.ssh/id_rsa
-#after_success:
-#- "./deploy/deploy_to_remote.sh"
+after_success:
+- "./deploy/deploy_to_remote.sh"
